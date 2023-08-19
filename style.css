@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Dancing+Script:wght@700&family=IM+Fell+French+Canon&family=Lato&family=Preahvihear&family=Roboto+Slab&family=Space+Grotesk:wght@500&family=Trispace&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto Slab';
+}
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: black; */
+}
+.container::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: url(./pexels-brett-sayles-912364.jpg) center no-repeat;
+    background-size: cover;
+    position: absolute;
+    opacity: 0.4;
+    z-index: -1;
+}
+.weather{
+    
+    z-index: 1;
+    display: flex;
+    align-items: center;
+}
+.weather1{
+    font-size: 4rem;
+}
+.weather p{
+    font-size: 2rem;
+}
+.weather span{
+    font-size: 0.75rem;
+}
+.weather > div{
+    margin: 0.6rem;
+}
+.weather3 img{
+    width: 4rem;
+}
+
+nav{
+    height: 85px;
+    border-radius: 80px 80px 0 0;
+    padding: 1rem 0px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+    background-color: rgba(243, 224, 224,0.02);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav form{
+    width: 70%;
+    grid-template-columns: 5fr 1fr;
+    display: grid;
+}
+.searchfield{
+    font-size: 1.2rem;
+    outline: none;
+    color:black;
+    border: none;
+    border-bottom: 1px solid;
+    background-color: transparent;
+    width: 98%;
+}
+nav form button{
+    background-color: transparent;
+    box-sizing: border-box;
+    font-size: 1.2rem;
+    outline: none;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 0 25px 25px 0;
+    color: rgb(78, 77, 77);
+    transition: all 1s;
+}
+nav form button:hover{
+    background-color: white;
+    color: rgb(78, 77, 77);
+}
